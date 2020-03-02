@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board">
+	<insert id="insertb" parameterType="board">
+		insert into board(num, name, title,memo, date,cnt)
+		values(#{num}, #{name}, #{title}, #{memo},curdate(),#{cnt})
+	</insert>
+	<update id="updateb" parameterType="board">
+		update board set title=#{title}, memo=#{memo}, date=curdate() where num = #{num}
+	</update>
+	<delete id="deleteb" parameterType="int">
+		delete from board where num = #{num}
+	</delete>
+	<select id="selectone" parameterType="int" resultType="board">
+		select * from board where num = #{num}
+	</select>
+	<select id="selectlist" resultType="board">
+		select * from board
+	</select>
+</mapper>
