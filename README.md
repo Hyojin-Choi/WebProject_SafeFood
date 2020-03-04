@@ -1,8 +1,8 @@
-# SAFEFOOD 안전먹거리 웹 페이지 개발
+# SafeFood 안전먹거리 웹 페이지 개발
 - 준비기간 : 3개월 (19.09.02 ~ 19.11.29)
 - 개발인원 : 2명
 - 역할 : 웹페이지 개발
-- 분석환경 : Java, Spring, Vue.js, Mysql
+- 분석환경 : Java, Spring, Spring Boot, Vue.js, Mysql
 
 # Project Info
 - 현대인의 영양상태 체크
